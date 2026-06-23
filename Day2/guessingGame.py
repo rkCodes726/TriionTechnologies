@@ -1,12 +1,12 @@
 S_number= 10
-num= int(input("Guess the number: "))
 
-while num!=S_number:
+while True:
     num= int(input("Guess the number: "))
-    if num==S_number:
-        print("Correct Guess!")
+    if num>S_number:
+        print("Too High!")
+    elif num<S_number:
+        print("Too low!")
     else:
-        if num>S_number:
-            print("Too High!")
-        elif num<S_number:
-            print("Too low!")
+        print("Correct Guess!")
+        break
+        
